@@ -41,6 +41,5 @@ app.get('/api/:teamName', (req, res) => {
     
 })
 
-app.listen(PORT, () => {
-    console.log(`The server is running on ${PORT}.`)
+app.listen(process.env.PORT || PORT, () => {
 })
