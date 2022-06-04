@@ -1,6 +1,9 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
 const PORT = (8000)
+
+app.use(cors())
 
 const teams = {
     'bayern': {
@@ -24,10 +27,6 @@ const teams = {
         'country': 'Unknown'
         },
 }
-
-/* app.set('view engine', 'ejs', (req, res) =>{
-    res.render(view, locals)
-}) */
 
 app.use(express.static('./'))
 
