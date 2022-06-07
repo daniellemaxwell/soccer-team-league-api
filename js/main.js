@@ -2,7 +2,7 @@ document.querySelector('#clickHere').addEventListener('click', makeReq)
 
 async function makeReq() {
     const teamName = document.querySelector("#soccerTeam").value
-    const res = await fetch(`https:/soccer-team-league-api.herokuapp.com/api/${teamName}`)
+    const res = await fetch(`/api/${teamName}`)
     const data = await res.json()
 
     console.log(data)
