@@ -9,5 +9,6 @@ async function makeReq() {
     document.querySelector('#teamName').textContent = data.teamName
     document.querySelector('#teamLeague').textContent = data.league
     document.querySelector('#teamLocation').textContent = data.country
+    document.querySelector('#teamNickname').textContent = data.nickname
 }
 
